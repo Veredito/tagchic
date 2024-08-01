@@ -23,8 +23,10 @@
 
   <link rel="preload" href="/css/style.css" as="style">
   <link href="/css/style.css" type="text/css" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+    
   <link href="/js/script.js" rel="preload" as="script">
+  
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBK1LS0W9R"></script>
@@ -74,6 +76,34 @@
 <div class="prBox"><div class="img img5"></div><span>Trio</span></div>
 </div>
 </section>
+
+<section id="product2">
+  <h1 id="pr2_title">Opções de tags de roupas</h1>
+  <h2 id="pr2_subtitle">Clique e arraste as tags, um click para zoom.</h2>
+  <div class="main-image" id="mainImage" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="/img/product2/shirt.webp" alt="Main Image">
+  </div>
+  <div class="thumbnails">
+      <div class="thumbnail" id="thumb1" onclick="openPopup(event, this)">
+          <img src="/img/product2/4.webp" draggable="true" ondragstart="drag(event)" alt="Thumbnail 1">
+      </div>
+      <div class="thumbnail" id="thumb2" onclick="openPopup(event, this)">
+          <img src="/img/product2/2.webp" draggable="true" ondragstart="drag(event)" alt="Thumbnail 2">
+      </div>
+      <div class="thumbnail" id="thumb3" onclick="openPopup(event, this)">
+          <img src="/img/product2/1.webp" draggable="true" ondragstart="drag(event)" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" id="thumb4" onclick="openPopup(event, this)">
+          <img src="/img/product2/3.webp" draggable="true" ondragstart="drag(event)" alt="Thumbnail 4">
+      </div>
+  </div>
+</section>
+
+
+<div class="popup" id="imagePopup" onclick="closePopup(event)">
+  <span class="popup-close" onclick="closePopup()">&times;</span>
+  <img id="popupImage" src="" alt="Popup Image">
+</div>
 
 <section class="ct_box">
 <div id="ft_box">
