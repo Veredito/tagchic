@@ -171,10 +171,11 @@ nav a {
     100% {opacity: 1;}
 }
 .grid1 {
-    max-width: 20rem;
+    max-width: 30rem;
     height: 100%;
-    top: 22rem;
+    top: 15rem;
     left: -20rem;
+    border: 0;
     transform: translateX(20%);
     opacity: 0;
     animation: blur 2s linear 0.5s 1 normal forwards;
@@ -365,10 +366,10 @@ nav a {
 .grid1 {
     position: absolute;
     height: auto;
-    max-width: 10rem;
-    top: 16rem;
+    max-width: 11rem;
+    top: 13rem;
     left: auto;
-    right: 1rem;
+    right: 0rem;
     border-radius: 4rem 20px;
 }
 .tag_title {
